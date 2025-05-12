@@ -9,9 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "@tailwindcss/oxide": "^4.1.4",
+    "chart.js": "^4.4.9",
+    "framer-motion": "^12.10.0",
+    "gsap": "^3.12.7",
+    "lightningcss": "^1.29.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "next": "15.3.2",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-slick": "^0.30.3",
+    "sharp": "^0.34.1",
+    "slick-carousel": "^1.8.1",
+    "slider": "^1.0.4",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

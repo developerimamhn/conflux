@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #03060C;
+  --foreground: #03060C;
+  --Blue-B700: #243757;
 }
+
+a {
+  scroll-behavior: smooth;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -14,8 +21,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #03060C;
+    --foreground: #03060C;
   }
 }
 
@@ -23,4 +30,1373 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Extralight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Author";
+  src: url("./font/Author-Variable.ttf") format("truetype");
+  font-style: normal;
+}
+
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+}
+
+
+@layer utilities{
+  .widtbrries{
+    color: var(--white, #E4F1F3);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .confiuxenablezcrewate{
+    color: var(--white, #E4F1F3);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    text-transform: uppercase;
+  }
+  .confiuxenablez{
+    color: #A1B0B2;
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    text-transform: capitalize;
+  }
+  .confiuxenablez{
+    @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]
+  }
+  .blcokchaiatrea{
+    color: #000 !important;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: #E4F1F3;
+  }
+  .blockchain-text {
+    color: #00C8FF;
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+  .greaidawsbadk{
+    background: linear-gradient(270deg, #5E2019 0%, rgba(94, 32, 25, 0.00) 100%);
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     border-radius: 23px 24px 20px 20px;
+  }
+  .goadsgvedfevg{
+    border-radius: 654.181px;
+background: #FF6035;
+filter: blur(274.7605895996094px);
+transform: rotate(26.594deg);
+flex-shrink: 0;
+  }
+  .bgrounsseccli{
+    border-radius: 20px;
+background: rgba(175, 50, 16, 0.20);
+  }
+  .realstarpe{
+    color: #FFF;
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 31.2px */
+  }
+  .realstarpe{
+    @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] py-[14px] sm:py-[15px] md:py-[16px] lg:py-[20px] xl:py-[24px] 2xl:py-[27px]
+  }
+  .slideritewsm{
+    border-radius: 23px 24px 20px 20px;
+    border: 2px solid rgba(169, 153, 151, 0.60);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(45.849998474121094px);
+    height: fit-content;
+  }
+  .speciasda{
+    background: linear-gradient(90deg, #FFF 0%, #DBCACA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%; /* 64.96px */
+  }
+  .autoalaidns{
+    color: #FFF;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 26.4px */
+  }
+  .autodesinania{
+    border: 1px solid #7B564C;
+    border-bottom: none;
+    
+    background: rgba(183, 95, 95, 0.25);
+  }
+  .talkewa{
+    color: #000;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+  }
+  .poicsebsa{
+    border-radius: 0px 0px 20px 20px;
+    background: #FA704B;
+  }
+  .piconsaisasz{
+    background: linear-gradient(90deg, #FFF 23.45%, #ADACAC 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+  }
+  .bowrerss{
+    color: #ADADAD;
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+  }
+  .trustesss{
+    color: #FFF;
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+  }
+  /* .backgroundimage {
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+  } */
+
+  .buttonone{
+    border-radius: 6px;
+    background: rgba(218, 255, 228, 0.10);
+    color: var(--White, #FFF);
+    text-align: right;
+    font-family: 'Switzer', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .buttontwo{
+    border-radius: 6px;
+    background: var(--03-fc-9-e, #03FC9E);
+    color: var(--Black, #030312);
+    text-align: right;
+    font-family: "Switzer", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .allhastinwsaws{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Switzer', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .allhastinwsaws{
+    @apply text-[10px] sm:text-[11px] md:text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[14px]
+  }
+  .bodeinggaas{
+    border-radius: 10px;
+    border: 1px solid rgba(3, 252, 158, 0.12);
+    background: rgba(3, 252, 158, 0.01);
+    backdrop-filter: blur(22px);
+  }
+  .peoexgolsss{
+    color: #03FC9E;
+    text-align: right;
+    font-family: "Switzer", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .peoexgols{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Switzer", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .peoexgols,.peoexgolsss ,.buttonone{
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] 
+  }
+  .buttonsflesxisnwa{
+    fill: rgba(3, 252, 158, 0.01);
+    stroke-width: 1px;
+    stroke: rgba(3, 252, 158, 0.12);
+    backdrop-filter: blur(22px);
+    width: 100%;
+  }
+  @import url('https://fonts.cdnfonts.com/css/switzer');
+
+  /* Class for changePositive: true (green) */
+  .change-positive {
+    color: #03FC9E;
+    font-family: 'Switzer', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(3, 252, 158, 0.10);
+    background: rgba(3, 252, 158, 0.10);
+  }
+  
+  /* Class for changePositive: false (red) */
+  .change-negative {
+    color: #FB4950;
+    font-family: 'Switzer', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(251, 73, 80, 0.10);
+    background: rgba(251, 73, 80, 0.10);
+  }
+  .learndihnsaz{
+    color: var(--03-fc-9-e, #03FC9E);
+    text-align: center;
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
+  }
+  .cicleone{
+    border-radius: 10px;
+    background: var(--212227, #212227);
+  }
+  .posiningsezx{
+    border-radius: 43px;
+    background: rgba(3, 252, 158, 0.10);
+  }
+  .takeexper{
+    color: var(--fdfcff, #FDFCFF);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+  }
+  .inturiss{
+    color: var(--bdbdbd, #BDBDBD);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+  .eastrasin{
+    color: var(--fdfcff, #FDFCFF);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32.2px; /* 128.8% */
+  }
+  .borindsas{
+    border-radius: 10px;
+    border: 1px solid rgba(253, 252, 255, 0.10);
+  }
+
+  .artoutsmartins{
+    color: var(--fdfcff, #FDFCFF);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.4px; /* 115% */
+  }
+  .bacxkgaAS{
+    
+  }
+  .bitstartp{
+    color: #ADADAD;
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .tradines{
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 73.2px */
+        background: linear-gradient(90deg, #FFF 0%, #DBCACA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .divisiolast{
+    color: #F3E2FF;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 47.6px */
+  }
+  .fontent{
+    font-weight: 800 !important;
+  }
+  .inpuitiname{
+    color: #8C5AB0;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 42px */
+  }
+  .welcobits {
+    color: var(--03-fc-9-e, #03FC9E);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+  }
+  .singpupagelogin{
+    background: #C293F7;
+  }
+  .signpuptatg{
+    color: #203DCD;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 71.4px */
+    letter-spacing: 2.1px;
+  }
+  
+  .signandpage{
+    background: #D3DCFF;
+  }
+  .sta7i09w{
+    color: #F3E2FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 118.8px */
+  }
+  .featuredescription{
+    color: #F3E2FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+  }
+  .featuretitle{
+    color: #F3E2FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 42px */
+  }
+  .dontmissing{
+    color: #F3E2FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120% !important; /* 42px */
+  }
+  .readdividinaga{
+    color: #E5C1FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 26px */
+    background: var(--gfxdsdgh, #1E53FF);
+  }
+  .dividwallet{
+    color: #E5C1FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 54.4px */
+    letter-spacing: 1.6px;
+  }
+  .selfcountopdia{
+    color: #F3E2FF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%; /* 140px */
+  }
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Apply the animation with smooth timing */
+.bounce {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+  .herobot{
+    background: #9226E0;
+  }
+  .fridendfamph{
+    color: #9226E0;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+  }
+.maneychange{
+  color: #9226E0;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 42px */
+}
+  .scaldowlaodads{
+    color: #9226E0;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 63.774px */
+  }
+  .fotoerheadesecton{
+    color: #FFF;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 38.4px */
+  }
+  .digibytefat{
+    color: #B4B3B7 !important;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .inpoutstys {
+    color: #B4B3B7;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  
+  .inpoutstys::placeholder {
+    color: #B4B3B7;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  
+  .roundclidenbttn{
+    border-radius: 180px;
+    border: 1px solid #1F1C29;
+    background: #070312;
+  }
+  .stateimageds{
+    color: #FFF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(106deg, #5C2FDA 36.54%, #7450EA 81.73%);
+  }
+  .colscatavazsd{
+    color: #B4B3B7;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+  }
+  .extasiscuting{
+    color: #B4B3B7;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  .whatisextass{
+    color: #FFF;
+    font-family: "Segoe UI";
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .howtobue{
+    background: linear-gradient(180deg, #F3F3F6 9.26%, #663DDE 65.19%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .lineronezse{
+    background-color: #522FC780;
+  }
+  .lineronesssss{
+    background: linear-gradient(90deg, #070312 42.15%, #07031200 100%);
+    flex-shrink: 0;
+  }
+  .lineronesssss22{
+    background: linear-gradient(270deg, #070312 42.15%, #07031200 100%);
+    flex-shrink: 0;
+  }
+  .trustedinses{
+    color: #B4B3B7;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .gradient-border {
+    border-bottom: 0.783px solid transparent;
+    border-image: linear-gradient(90deg, rgba(34, 35, 56, 0) 0%, #302A61 50.16%, rgba(34, 35, 56, 0) 100%);
+    border-image-slice: 1;
+  }
+  
+  .enterimail{
+    color: var(--Color-Paragraph, #7F8799);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 18.8px */
+  }
+  .subscriobesec{
+    color: #D0D1E3;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 26.32px */
+  }
+  .markerleines{
+    border-radius: 929.817px;
+    opacity: 0.25;
+    background: rgba(97, 58, 212, 0.70);
+    filter: blur(195.8333282470703px);
+  }
+  .borderingtextws{
+    border-radius: 25.067px;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0px 0px 25.067px 0px rgba(199, 211, 234, 0.04) inset;
+  }
+  .gradient-class{
+    background: linear-gradient(93deg, #6D43E3 0.52%, #AB8EFF 27.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .lineronesthews{
+    border-radius: 1513.491px;
+    opacity: 0.9;
+    background: linear-gradient(90deg, #4F2AC0 0%, #8B65FE 100%);
+    filter: blur(197.39999389648438px);
+    width: 100vh;
+    height: 152.814px;
+    transform: rotate(25.732deg);
+    flex-shrink: 0;
+  }
+  /* Add this to your global CSS or component's CSS */
+.swiper-button-next,
+.swiper-button-prev {
+  background: none !important;
+  color: white; /* Or any text color you want */
+}
+
+/* Remove the default arrow icons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+  .dmitrymishni{
+    color: #D0D1E3;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 18.8px */
+  }
+  .chieffounder{
+    color: #9DA4B2;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 20.445px */
+  }
+  .buggningsec{
+    border-radius: 12.533px !important;
+    background: rgba(255, 255, 255, 0.00) !important;
+    box-shadow: 0px 0px 37.6px 0px rgba(199, 211, 234, 0.05) inset !important;
+  }
+  .solonasection{
+    border-radius: 18.8px;
+    border: 0.783px solid rgba(34, 35, 56, 0.00);
+    background: rgba(186, 214, 247, 0.02);
+    padding: 9.4px;
+  }
+  .animate-logoFadeIn {
+    animation: logoFadeIn 0.6s ease-out forwards;
+  }
+
+  @keyframes logoFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .browseaudit{
+    color: #D0D1E3;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 20.68px */
+  }
+  .stakingreas{
+    color: #D0D1E3;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 30.08px */
+  }
+  .oursecton{
+    border-radius: 9.4px;
+    background: linear-gradient(180deg, #4E27BC 0%, #A68AF9 100%);
+    color: #FFF;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 17.312px */
+  }
+  .onesborder{
+    background: linear-gradient(180deg, #4E27BC 0%, #A68AF9 100%) !important;
+    border-radius: 23px;
+  }
+  .refresingsection{
+    color: #FFF;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.92px */
+  }
+  .priceingxed{
+    color: #9FA3BB;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.04px */
+  }
+  .ngasings{
+    color: #D0D1E3;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 18.8px */
+  }
+  .bordering{
+    border-radius: 9.4px;
+    border: 0.783px solid #25263C;
+  }
+  .howmat{
+    color: #D0D1E3;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 19.427px */
+  }
+  .byeextraone{
+    /* border-radius: 47px; */
+    /* background: linear-gradient(180deg, #4E27BC 0%, #A68AF9 100%); */
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.92px */
+  }
+  .byeextra{
+    border-radius: 47px;
+    background: linear-gradient(180deg, #4E27BC 0%, #A68AF9 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.92px */
+  }
+  .buycrxsecton{
+    border-radius: 18.8px;
+    border: 0.783px solid #2D2F42;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 0px 37.6px 0px rgba(199, 211, 234, 0.05) inset;
+    backdrop-filter: blur(3.133333206176758px);
+    width: 100%;
+    max-width: 401.85px;
+    margin: 0 auto;
+  }
+  .buttonaudit-3{
+    border-radius: 47px;
+    background: linear-gradient(180deg, #4E27BC 0%, #A68AF9 100%);
+    backdrop-filter: blur(3.133333206176758px);
+    color: #FFF;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.92px */
+  }
+  .acqueriction{
+    border-radius: 25.067px;
+    border: 0.783px solid #2D2F42;
+    background: #0E0E27;
+  }
+  .linerone{
+    opacity: 0.3;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, #FFF 50.16%, rgba(255, 255, 255, 0.20) 100%);
+    width: 1.175px;
+    flex-shrink: 0;
+  }
+  .projctsvalue{
+    color: #FFF;
+    text-align: center;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 24.988px */
+  }
+  .locedmaring{
+    color: #FFF;
+    text-align: center;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 37.6px */
+  }
+  .maringpriceingsec{
+    border-radius: 25.067px;
+    border: 0.783px solid rgba(255, 255, 255, 0.10);
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(4.699999809265137px);
+  }
+  .innovationsater{
+    border-radius: 60px;
+    border: 1px solid #5C2FDA;
+    color: #B4B3B7;
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .backgroundimageheader{
+    border-radius: 0px 0px 31.333px 31.333px;
+background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, #A68AF9 100%);
+  }
+  .buttonaudit {
+    border-radius: 40px;
+    background: var(--03-fc-9-e, #03FC9E);
+    color: var(--000000, #000);
+    text-align: center;
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    text-transform: capitalize;
+    border: 1px solid var(--03-fc-9-e, #03FC9E);
+    transition: 0.5s;
+}
+
+.buttonaudit:hover{
+  border-radius: 40px;
+  background: rgba(3, 252, 158, 0.10);
+  color: var(--03-fc-9-e, #03FC9E);
+  text-align: center;
+  font-family: "Author";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+
+.buttonauditelt{
+  border-radius: 2px;
+  background: var(--primary, #00C8FF);
+  color: #011518;
+  font-family: 'Author';
+  font-style: normal;
+  font-weight: 494;
+  line-height: 150%; /* 27px */
+  text-transform: uppercase;
+  transition: .5s;
+}
+.buttonauditelt:hover{
+  background: #00c8ffc9;
+}
+
+  .linersext{
+    border-bottom: 0.78px solid;
+    border-image-source: linear-gradient(90deg, #010214 0%, rgba(55, 57, 82, 0.6) 50.16%, #010214 100%);
+  }
+  .privacypolicy{
+    color: var(--bdbdbd, #BDBDBD);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  .compais{
+    color: var(--White, #FFF);
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .lastpadding{
+    color: #C7C9D1;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+  .meedicalkitslist{
+    @apply text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
+  }
+  .meedicalkitslist{
+    color: #C7C9D1;
+    font-family: 'Plain';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 28px */
+  }
+  .golobalmarketes{
+    color: #F5FCFF !important;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+.getstart{
+  border-radius: 8px;
+  background: #070510;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Plain";
+  font-style: normal;
+  line-height: 24.75px; /* 137.5% */
+}
+  .lenerone{
+      background: linear-gradient(88deg, #070510 0%, #07051000 100%);
+  }
+  .lenertwo{
+      background: linear-gradient(273deg, #070510 0%, #07051000 100%)
+}
+  .weworkdbest{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Plain';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 70.4px */
+    text-align: center;
+  }
+
+.outlideopos{
+    color: #6F41D2;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 150;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .scroll-content {
+    display: flex;
+    align-items: center;
+    animation: infinite-scroll 40s linear infinite;
+    position: relative;
+    z-index: 10;
+  }
+  
+  
+  .desktoppage{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .desktopverson{
+    color: #FFF;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+  }
+  .popularmost{
+    color: #FFF;
+    text-align: center;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19.2px; /* 160% */
+    display: inline-flex;
+    padding: 5px 15px 6px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 76px;
+    border: 1px solid #225052;
+    background: #173F46;
+  }
+  .statebutton{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.75px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    transition: 0.5s;
+  }
+  .statebutton:hover{
+    background: #fff;
+    color: #001;
+  }
+  .tradinplasds{
+    color: var(--White, #FFF);
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+  }
+  .idealfornew{
+    color: var(--White, #FFF);
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .MinDeposit{
+    color: var(--Paragraph, #C7C9D1);
+    font-family: 'Plain';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .Heading20{
+    color: var(--White, #FFF);
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  .stateclassname{
+    color: #FFF;
+    font-family: 'Plain';
+    font-style: normal;
+    line-height: 28.558px; /* 118.992% */
+  }
+  .stareings{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .xonic{
+    color: var(--black, #070510);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+  }
+  .explab{
+    color: var(--black, #070510);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 70.4px */
+  }
+  .backgroundline{
+    background: radial-gradient(41.77% 41.77% at 50% 50%, rgba(7, 5, 16, 0.60) 0%, #070510 100%);
+  }
+  .numberingpositioning{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 300;
+
+  }
+  .padingfoxing{
+    color: #B4B3B7;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  .forex{
+    color: #FFF;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .foxbackgron {
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #171127;
+    overflow: hidden;
+    transition: 0.5s;
+    background: linear-gradient(195deg, #1F1731 -12.35%, #0C0817 74.08%);
+  }
+  
+  /* Add a pseudo-element for hover animation */
+  .foxbackgron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(360deg, #1F1731 -12.35%, #0C0817 74.08%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+  }
+  
+  .foxbackgron:hover::before {
+    opacity: 1;
+  }
+  
+  /* Make sure your content is above the pseudo-element */
+  .foxbackgron > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .leveragefinancial{
+    color: #818499;
+    text-align: center;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%; /* 25.85px */
+  }
+  .headerbackgronsdvg{
+    /* border-image-source: linear-gradient(90deg, #010214 0%, rgba(55, 57, 82, 0.6) 50.16%, #010214 100%); */
+    /* border-bottom-width: 0.78px;
+    border-style: solid; */
+
+
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
+    background: linear-gradient(90deg, #010214 0%, rgba(55, 57, 82, 0.6) 50.16%, #010214 100%);
+    position: relative;
+    z-index: 99;
+  }
+  .Frame9{
+    border-radius: 8px;
+    background: #FFF;
+    color: var(--black, #070510);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 300;
+  }
+  .Frame10{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Plain";
+    font-style: normal;
+    font-weight: 300;
+  }
+  .InvestTodayBuildASecuredTomorrow{
+    color: #9226E0 ;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%; /* 80px */
+  }
+  .buttonaudit-2{
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(106deg, #5C2FDA 36.54%, #7450EA 81.73%);
+    color: #FFF;
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    transition: 1s;
+  }
+  .buttonaudit-5{
+    border-radius: 50px;
+    border: 1px solid #5C2FDA;
+    color: #B4B3B7;
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    transition: 1s;
+  }
+  .buttonaudit-5:hover{
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(106deg, #5C2FDA 36.54%, #7450EA 81.73%);
+    color: #FFF;
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    transition: 1s;
+  }
+  .buttonaudit-2:hover{
+    color: #fff;
+    background: none;
+    border: 1px solid #5C2FDA;
+  }
+  .fonteight{
+    font-weight: 800;
+    font-family: "Plain";
+  }
+  .fontthree{
+    font-weight: 100;
+    font-family: "Plain";
+  }
+  .TradeLikeAProWithXonicCapital{
+    color: #9226E0;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 180px */
+  }
+  .gradientuser{
+    background: linear-gradient(0deg, #5C2FDA 4.39%, #8D70EF 22.63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .TradeLikeAProWithXonicCapitalchalline{
+    color: #F0F1FB;
+    text-align: center;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 67.68px */
+  }
+  .custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 78px;
+  }
+  
+  select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;         
+    width: 78px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    outline: none;
+  }
+  
+  
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.5s;
+    transition: background 0.4s ease, padding 0.4s ease;
+    opacity: 0;
+    animation: slideUp 0.6s 0.4s ease forwards;
+  }
+  
+
+  .header.scrolled {
+    /* background: #15161B; */
+    /* border-image-source: linear-gradient(90deg, #010214 0%, rgba(55, 57, 82, 0.6) 50.16%, #010214 100%);
+    border-bottom-width: 0.78px;
+    border-style: solid; */
+    border: 1px solid rgba(0, 204, 255, 0.00);
+    background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #13181F 42.16%, rgba(21, 26, 33, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    opacity: 10%;
+    transition: 0.5s;
+  }
+  
+  /* Slide-up animation */
+  @keyframes slideUp {
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  .loginareas{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Plain';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; 
+  }
+  .esistareas{
+    border-radius: 8px;
+    background: #FFF;
+    color: var(--black, #070510);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Plain';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+  }
+  .Link-manu-bar{
+    color: #A7B1B2;
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    text-transform: uppercase;
+  }
+  .Link-manu-bar{
+    @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] duration-300 text-[#A7B1B2] hover:text-[#a7b1b2af]
+  }
+  .backgroundheader{
+    background: linear-gradient(180deg, #141024 0%, #070510 50%);
+  }
 }
