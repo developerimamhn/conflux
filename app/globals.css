@@ -92,6 +92,51 @@ body {
 
 
 @layer utilities{
+  .sectionraping{
+    border-radius: 16px;
+    background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #151A21 100%);
+  }
+  .outtrescosn{
+    color: var(--paragraph, #B3BEBF);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 375;
+    line-height: 150%; /* 27px */
+  }
+  .hightreac{
+    color: var(--white, #E4F1F3);
+    text-align: center;
+
+    /* H5 */
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 596;
+    line-height: 140%; /* 49px */
+  }
+  .styliinsap{
+    color: #6C7D80;
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+  }
+  .boxintras{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 200, 255, 0.60);
+    background: radial-gradient(100% 100% at 28.34% 0%, rgba(71, 147, 183, 0.20) 0%, rgba(2, 5, 10, 0.00) 100%);
+  }
+  .stayupasd{
+    color: #E4F1F3;
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+  }
+  .trasnlist{
+    border: 1px solid rgba(0, 204, 255, 0.00);
+    background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #13181F 42.16%, rgba(21, 26, 33, 0.00) 100%);
+    backdrop-filter: blur(2px);
+  }
   .widtbrries{
     color: var(--white, #E4F1F3);
     font-family: "Author";
@@ -170,14 +215,11 @@ background: rgba(175, 50, 16, 0.20);
     height: fit-content;
   }
   .speciasda{
-    background: linear-gradient(90deg, #FFF 0%, #DBCACA 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Instrument Sans";
+    color: var(--white, #E4F1F3);
+    font-family: "Author";
     font-style: normal;
-    font-weight: 600;
-    line-height: 112%; /* 64.96px */
+    font-weight: 700;
+    line-height: 125%; /* 85px */
   }
   .autoalaidns{
     color: #FFF;
@@ -204,14 +246,20 @@ background: rgba(175, 50, 16, 0.20);
     background: #FA704B;
   }
   .piconsaisasz{
-    background: linear-gradient(90deg, #FFF 23.45%, #ADACAC 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Instrument Sans";
+    color: var(--white, #E4F1F3);
+    text-align: center;
+    font-family: 'Author';
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%; /* 57.6px */
+    font-weight: 596;
+    line-height: 125%; /* 85px */
+  }
+  .conflwtaa{
+    color: var(--paragraph, #B3BEBF);
+    text-align: center;
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 375;
+    line-height: 150%; /* 30px */
   }
   .bowrerss{
     color: #ADADAD;
@@ -389,11 +437,10 @@ background: rgba(175, 50, 16, 0.20);
     
   }
   .bitstartp{
-    color: #ADADAD;
-    text-align: center;
-    font-family: "Instrument Sans";
+    color: var(--paragraph, #B3BEBF);
+    font-family: 'Author';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 375;
     line-height: 150%; /* 30px */
   }
   .tradines{

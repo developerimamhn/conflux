@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import image2 from './image/image1.png';
 import Image from 'next/image';
 import image1 from './image/image1 (2).png';
 
@@ -87,7 +88,8 @@ const HeroPage = () => {
         <div id="hero" ref={buttonRef} className='relative'>
           <div className='relative z-[2] overflow-hidden'>
               {/* <div className='w-1/6 h-1/6 absolute right-[20%] top-1/2 -translate-y-1/2 -z-10 sm:block hidden rounded-[388px] opacity-[0.76] bg-[#03FC9E] blur-[200px]'></div> */}
-              <div className='pt-[80px] sm:pt-[81px] md:pt-[150px] xl:pt-[200px] 2xl:pt-[250px] sm:pb-0 pb-[50px] container mx-auto px-[24px] sm:px-0 w-full flex felx-center justify-center'>
+              <div className='pt-[80px] sm:pt-[81px] md:pt-[150px] xl:pt-[200px] 2xl:pt-[250px]  container mx-auto px-[24px] sm:px-0 w-full flex felx-center justify-center relative pb-[50px] sm:pb-[70px] md:pb-[90px] lg:pb-[110px] xl:pb-[140px] 2xl:pb-[180px]'>
+                <Image className="absolute bottom-0 right-0 z-[-1] w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[100px] h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[100px] mb-[16px] sm:mb-[20px] md:mb-[24px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px]" src={image2} alt="loading ..."/>
                 <div  className='grid grid-cols-1 items-center'>
                   <div className='flex items-start flex-col justify-center'>
                     <div className='flex items-start sm:items-center sm:flex-row flex-col justify-start gap-[10px] sm:gap-[36px] md:gap-[40px] lg:gap-[48px] xl:gap-[64px] 2xl:gap-[96px]'>
