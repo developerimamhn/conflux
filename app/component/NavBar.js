@@ -139,7 +139,7 @@ const NavBar = () => {
                     </svg>
                     </a>
 
-                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#News Feed" onClick={(e) => handleScroll(e, "News Feed")}>
+                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#NewsFeed" onClick={(e) => handleScroll(e, "NewsFeed")}>
                     News Feed</a>
 
                     <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#About" onClick={(e) => handleScroll(e, "About")}>

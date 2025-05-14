@@ -130,6 +130,22 @@ body {
     background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #1A2027 100%);
     
   }
+  @property --angles {
+  syntax: '<angles>';
+  initial-value: 114deg;
+  inherits: false;
+}
+
+.boxingseiasa {
+  --angles: 114deg;
+  border-radius: 16px;
+  background: linear-gradient(var(--angles), rgba(18, 23, 29, 0) 0%, #151A21 100%);
+  transition: --angles 0.5s ease;
+}
+
+.boxingseiasa:hover {
+  --angles: 0deg;
+}
   .consnetesds{
     color: var(--paragraph, #B3BEBF);
     font-family: 'Author';
@@ -144,10 +160,22 @@ body {
     font-weight: 700;
     line-height: 125%; /* 85px */
   }
-  .sectionraping{
-    border-radius: 16px;
-    background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #151A21 100%);
-  }
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 114deg;
+  inherits: false;
+}
+
+.sectionraping {
+  --angle: 114deg;
+  border-radius: 16px;
+  background: linear-gradient(var(--angle), rgba(18, 23, 29, 0) 0%, #151A21 100%);
+  transition: --angle 0.5s ease;
+}
+
+.sectionraping:hover {
+  --angle: 228deg;
+}
   .outtrescosn{
     color: var(--paragraph, #B3BEBF);
     font-family: "Author";
@@ -1029,11 +1057,11 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
     border-image-source: linear-gradient(90deg, #010214 0%, rgba(55, 57, 82, 0.6) 50.16%, #010214 100%);
   }
   .privacypolicy{
-    color: var(--bdbdbd, #BDBDBD);
-    font-family: "Author";
+    color: var(--paragraph, #B3BEBF);
+    font-family: 'Author';
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 25.6px */
+    line-height: 150%; /* 27px */
   }
   .compais{
     color: var(--White, #FFF);
@@ -1485,7 +1513,6 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
     line-height: 100%;
   }
   .Link-manu-bar{
-    color: #A7B1B2;
     font-family: "Author";
     font-style: normal;
     font-weight: 400;
@@ -1493,7 +1520,7 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
     text-transform: uppercase;
   }
   .Link-manu-bar{
-    @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] duration-300 text-[#A7B1B2] hover:text-[#a7b1b2af]
+    @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] duration-300 text-[#A7B1B2] hover:text-[#00C8FF]
   }
   .backgroundheader{
     background: linear-gradient(180deg, #141024 0%, #070510 50%);

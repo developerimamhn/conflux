@@ -169,7 +169,7 @@ const Pagefive = () => {
     return () => ctx.revert();
   }, []);
     return (
-        <div id='Blog' className='relative pb-[100px] sm:pb-[180px] md:pb-[220px] lg:pb-[250px] xl:pb-[280px] 2xl:pb-[320px]'>
+        <div id='NewsFeed' className='relative pb-[100px] sm:pb-[180px] md:pb-[220px] lg:pb-[250px] xl:pb-[280px] 2xl:pb-[320px]'>
           <Image className="absolute bottom-0 right-6 sm:right-[100px] z-[-1] w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[100px] h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[100px] mb-[16px] sm:mb-[20px] md:mb-[24px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px] " src={image5} alt="loading ..."/>
             <div className='relative px-[32px] sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[77px] '>
                 <h2 className='cfxtokesn text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[68px] text-center'>Get involved</h2>
@@ -178,10 +178,10 @@ const Pagefive = () => {
                 {socialItems.map((item) => (
                   <div
                     key={item.id}
-                    className="boxingseiasa relative p-[15px] sm:p-[16px] md:p-[20px] lg:p-[24px] xl:p-[32px] 2xl:p-[36px]"
+                    className="boxingseiasa group relative p-[15px] sm:p-[16px] md:p-[20px] lg:p-[24px] xl:p-[32px] 2xl:p-[36px]"
                   >
                     <div
-                      className="back h-full absolute right-0 top-0 w-full z-[50] rounded-[14.417px] border-[4px] border-solid border-transparent bg-gradient-to-tl from-[#00CCFF] via-[#00CCFF00] to-[#00CCFF] bg-border-box"
+                      className="back h-full absolute right-0 top-0 w-full z-[50] rounded-[14.417px] border-[4px] border-solid border-transparent group-hover:bg-gradient-to-br  bg-gradient-to-tl from-[#00CCFF] via-[#00CCFF00] to-[#00CCFF] bg-border-box"
                     ></div>
                     <div className="flex items-center justify-start gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[19px]">
                       {item.iconPath}
@@ -195,7 +195,7 @@ const Pagefive = () => {
                       </p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[30px]"
+                        className="w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[30px] opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"
                         viewBox="0 0 30 29"
                         fill="none"
                       >

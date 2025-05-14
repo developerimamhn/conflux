@@ -306,7 +306,7 @@ const Pagetwo = () => {
 
     
     return (
-        <div id='About'  className='pt-[60px] md:pt-[90px] lg:pt-[110px] xl:pt-[140px] 2xl:pt-[180px] px-6 sm:px-0 pb-[60px] sm:pb-[80px] md:pb-[100px] lg:pb-[130px] xl:pb-[160px] 2xl:pb-[180px] relative '>
+        <div ref={wrapperRef} id='Devolopers'  className='pt-[60px] md:pt-[90px] lg:pt-[110px] xl:pt-[140px] 2xl:pt-[180px] px-6 sm:px-0 pb-[60px] sm:pb-[80px] md:pb-[100px] lg:pb-[130px] xl:pb-[160px] 2xl:pb-[180px] relative '>
           <Image src={backgrundtexxt} alt='loading...' className='mr-[24px] sm:mr-[32px] md:mr-[36px] lg:mr-[40px] xl:mr-[48px] 2xl:mr-[64px] w-[40px] sm:w-[60px] md:w-[90px] lg:w-[118px] xl:w-[164px] 2xl:w-[185px]  absolute right-0  -bottom-[32px] sm:-bottom-[36px] md:-bottom-[40px] lg:-bottom-[48px] xl:-bottom-[64px] 2xl:-bottom-[96px]' />
            <div className='container relative mx-auto px-[15px] sm:px-[16px] md:px-[20px] lg:px-[24px] xl:px-[32px] 2xl:px-[36px]'>
             <Image src={smslide1} alt='loading...' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[96px] h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[96px] absolute left-0 top-0' />

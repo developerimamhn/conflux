@@ -154,29 +154,31 @@ const Footer = () => {
                     <div className='grid grid-cols-12 justify-between gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[128px] h-full relative pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[77px] border-b-[1px] border-[#32343D]'>
                       <div className='col-span-8 sm:col-span-5'>
                         <Image className='sm:w-[50px] md:w-[60px] lg:w-[70px] xl:w-[90px] 2xl:w-[110px] w-[135px] ' src={logo} alt="loading..."/>
-                        <p className='privacypolicy text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] md:pr-[20px] xl:pr-[30%]'>Conflux Network: Building a multi-chain ecosystem to enable creators, communities, and markets to connect globally across borders and protocols.
+                        <p className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] md:pr-[20px] xl:pr-[30%]'>Conflux Network: Building a multi-chain ecosystem to enable creators, communities, and markets to connect globally across borders and protocols.
 </p>
                       </div>
                       <div className='col-span-7 grid grid-cols-2 gap-6 sm:gap-0 justify-between items-start'>
                         <div className='flex items-center flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
                           <div className='h-full absolute left-0 top-0  w-[1px] z-[50] backgaeasfoter xl:block hidden'></div>
                           <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
-                          <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Resources</a>
-                            <ul className='flex justify-start flex-col gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Blog & Insight </a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Case Studies</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Tutorials</a>
+                          <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Categories</a>
+                            <ul className='flex justify-start flex-col gap-[11px] sm:gap-[12px] md:gap-[13px] lg:gap-[14px] xl:gap-[15px] 2xl:gap-[16px] footeritesm figtree text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px]'>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Developers</a>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Technology</a>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Grants</a>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Partners</a>
                             </ul>
                             </div>
                         </div> 
                         <div className='flex items-end flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
                           <div className='h-full absolute left-0 top-0  w-[1px] z-[50] backgaeasfoter xl:block hidden'></div>
                           <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
-                          <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Generals</a>
-                            <ul className='flex justify-start flex-col gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Homepage</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Testimonials</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Category</a>
+                          <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Quick Links</a>
+                            <ul className='flex justify-start flex-col gap-[11px] sm:gap-[12px] md:gap-[13px] lg:gap-[14px] xl:gap-[15px] 2xl:gap-[16px] footeritesm figtree text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px]'>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>About</a>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Team</a>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Careers</a>
+                              <a className='privacypolicy duration-300 text-[#B3BEBF] hover:text-[#00C8FF] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] cursor-pointer'>Ecosystem</a>
                             </ul> 
                             </div>
                         </div> 

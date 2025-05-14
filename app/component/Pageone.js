@@ -190,7 +190,7 @@ const sliderSettings = {
 const Pageone = () => {
   
     return (
-        <div  id='About'  className='relative'>
+        <div className='relative'>
             <div   className='w-full'>
               <div className='flex items-center py-[20px] sm:py-[24px] md:py-[32px] lg:py-[36px] xl:py-[40px] 2xl:py-[50px]  trasnlist px-[24px] sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px] '>
                  <div className=' h-full absolute left-0 top-0  w-[400px] z-[50] border-t-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#00C8FF4D,#060C1200)_1] xl:block hidden'></div>

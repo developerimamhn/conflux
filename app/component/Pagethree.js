@@ -102,7 +102,7 @@ const Pagethree = () => {
 
   
     return ( 
-        <div id='Blog' ref={wrapperRef} className='relative '>
+        <div id='Ecosystem' ref={wrapperRef} className='relative '>
           {/* <div className='w-1/3 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 goadsgvedfevg h-1/3 -z-[1]'></div> */}
             <div  className='relative container mx-auto '>
                 <div className="flex flex-col justify-between gap-[24px] sm:gap-[32px] md:gap-[36px] lg:gap-[40px] xl:gap-[48px] 2xl:gap-[64px] px-4 sm:px-6 lg:px-8">
@@ -174,41 +174,41 @@ const Pagethree = () => {
                   modules={[Pagination, Navigation, HashNavigation, Autoplay]}
                   className="mySwiper h-fit"
                     >
-                    <SwiperSlide data-hash="slide1" className=''>
+                    <SwiperSlide data-hash="slide1" className='cursor-pointer'>
                       <Image src={slide1} alt="Image" className='w-full h-auto' />
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide2" className=''>
+                    <SwiperSlide data-hash="slide2" className='cursor-pointer'>
                       <Image src={slide2} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide3" className=''>
+                    <SwiperSlide data-hash="slide3" className='cursor-pointer'>
                       <Image src={slide3} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide4" className=''>
+                    <SwiperSlide data-hash="slide4" className='cursor-pointer'>
                       <Image src={slide4} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide5" className=''>
+                    <SwiperSlide data-hash="slide5" className='cursor-pointer'>
                       <Image src={slide5} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide1" className=''>
+                    <SwiperSlide data-hash="slide1" className='cursor-pointer'>
                       <Image src={slide1} alt="Image" className='w-full h-auto' />
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide2" className=''>
+                    <SwiperSlide data-hash="slide2" className='cursor-pointer'>
                       <Image src={slide2} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide3" className=''>
+                    <SwiperSlide data-hash="slide3" className='cursor-pointer'>
                       <Image src={slide3} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide4" className=''>
+                    <SwiperSlide data-hash="slide4" className='cursor-pointer'>
                       <Image src={slide4} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide5" className=''>
+                    <SwiperSlide data-hash="slide5" className='cursor-pointer'>
                       <Image src={slide5} alt="Image" className='w-full h-auto' />
                       
                     </SwiperSlide>
