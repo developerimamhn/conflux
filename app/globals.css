@@ -92,6 +92,58 @@ body {
 
 
 @layer utilities{
+  .conflueiah{
+    color: var(--Blue-B200, #6B788E);
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+  .backgaeasfoter{
+    background: linear-gradient(180deg, #32343D -49.18%, rgba(50, 52, 61, 0.00) 106.07%,rgba(50, 52, 61, 0.00) 106.07%);
+  }
+  .back{
+  border-radius: 14.417px; /*1*/
+  border: 1px solid transparent; /*2*/
+  background: linear-gradient(155deg, #00ccff96, #00CCFF00 , #00CCFF00 ) border-box; /*3*/
+  mask: /*4*/
+    linear-gradient(#000 0 0) padding-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; /*5*/
+  }
+  .jonsasdfgawsz{
+    color: var(--paragraph, #B3BEBF);
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 33px */
+  }
+  .discoadsf{
+    color: var(--white, #E4F1F3);
+    font-family: "Author";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 45px */
+  }
+  .boxingseiasa{
+    border-radius: 14.417px;
+    background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #1A2027 100%);
+    
+  }
+  .consnetesds{
+    color: var(--paragraph, #B3BEBF);
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .cfxtokesn{
+    color: var(--white, #E4F1F3);
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 85px */
+  }
   .sectionraping{
     border-radius: 16px;
     background: linear-gradient(114deg, rgba(18, 23, 29, 0.00) 0%, #151A21 100%);
@@ -100,7 +152,7 @@ body {
     color: var(--paragraph, #B3BEBF);
     font-family: "Author";
     font-style: normal;
-    font-weight: 375;
+    font-weight: 400;
     line-height: 150%; /* 27px */
   }
   .hightreac{
@@ -110,7 +162,7 @@ body {
     /* H5 */
     font-family: 'Author';
     font-style: normal;
-    font-weight: 596;
+    font-weight: 600;
     line-height: 140%; /* 49px */
   }
   .styliinsap{

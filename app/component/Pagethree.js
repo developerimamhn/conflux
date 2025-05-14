@@ -102,14 +102,14 @@ const Pagethree = () => {
 
   
     return ( 
-        <div id='Blog' className='relative '>
+        <div id='Blog' ref={wrapperRef} className='relative '>
           {/* <div className='w-1/3 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 goadsgvedfevg h-1/3 -z-[1]'></div> */}
             <div  className='relative container mx-auto '>
                 <div className="flex flex-col justify-between gap-[24px] sm:gap-[32px] md:gap-[36px] lg:gap-[40px] xl:gap-[48px] 2xl:gap-[64px] px-4 sm:px-6 lg:px-8">
                   <div  className="relative">
                     <div>
                       <h2 className='speciasda text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[68px]'>Our Team</h2>
-                        <div className='flex justify-between items-center w-full'>
+                        <div className='flex justify-start sm:justify-between items-start sm:items-center w-full  sm:flex-row flex-col sm:gap-0 gap-6'>
                           <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-start !text-[#fff] relative '>The core leadership team of Conflux Network is comprised of <br className='lg:block hidden'/> prominent researchers, scientists and business leaders with <br className='lg:block hidden'/> collective experience across the fields</p>
                           <div className="flex items-center justify-start  gap-6">
                           <div className="custom-button-next cursor-pointer hover:opacity-50 duration-200">

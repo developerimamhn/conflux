@@ -5,6 +5,12 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+import imageone from './image/smslide1.png';
+import image1 from './image/image1 (2).png';
+import image2 from './image/image2.png';
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -159,49 +165,29 @@ const Pageone = () => {
   ];
 
   return (
-    <div id="Blog" ref={wrapperRef} className="relative overflow-hidden py-[80px] sm:py-[60px] md:py-[70px] lg:py-[90px] xl:py-[120px] 2xl:py-[150px]" >
+    <div id="Blog" ref={wrapperRef} className="relative overflow-hidden py-[60px] md:py-[90px] lg:py-[110px] xl:py-[140px] 2xl:py-[180px] px-[36px] sm:px-[40px] md:px-[48px] lg:px-[64px] xl:px-[96px] 2xl:px-[128px] " >
       <div className="relative">
-        <div className="container mx-auto px-6 sm:px-0">
-          <div className="grid grid-cols-6 sm:grid-cols-12 gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[128px]">
-            <div className='col-span-6'>
-              <div className='flex items-start flex-col justify-start'>
-                <h2 className='tradines text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] !text-start xl:pr-[10%] 2xl:pr-[20%]'>Empowering Businesses and Individuals with AI Growth</h2>
-                <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-start xl:pr-[20%] 2xl:pr-[30%]'>We help businesses and individuals leverage AI to drive growth, enhance efficiency, and foster innovation.</p>
-                  <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center py-[9px] sm:py-[10px] md:py-[11px] lg:py-[12px] xl:py-[13px] 2xl:py-[14px] px-[13px] sm:px-[14px] md:px-[15px] lg:px-[16px] xl:px-[20px] 2xl:px-[24px] group gap-[7.50px] mt-[14px] sm:mt-[15px] md:mt-[16px] lg:mt-[20px] xl:mt-[24px] 2xl:mt-[32px] '>
-                  Our Testimonial
+        <div className=' sm:w-2/5 absolute left-0 top-0 h-auto hidden sm:flex flex-col items-center justify-center'>
+            <h2 className='cfxtokesn text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[68px] text-center'>The CFX Token</h2>
+            <Image className='' src={imageone} alt=''/>
+        </div>
+          <div className='container mx-auto'>
+            <div className="grid grid-cols-1 sm:grid-cols-2 items-center borderabnsotehaA relative">
+              <div className='h-full absolute right-0 top-0  w-full z-[50] border-t-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#05091000,#32343d66)_1] xl:block hidden'></div>
+                <div className=' h-full absolute right-0 bottom-0 z-[50] border-b-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#05091000,#32343d66)_1] w-full xl:block hidden'></div>
+                <div className='flex justify-center itesm-center flex-col'>
+                  <Image src={image1} alt='' className='w-1/2 opacity-0 sm:block hidden' />
+                  <h2 className='cfxtokesn text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[68px] text-center sm:hidden block'>The CFX Token</h2>
+                  <Image className='sm:hidden block' src={imageone} alt=''/>
+                </div>
+                <div className='pl-[14px] sm:pl-[15px] md:pl-[16px] lg:pl-[20px] xl:pl-[24px] 2xl:pl-[32px] border-l-[1px] border-[#32343D] relative sm:block flex justify-center items-center flex-col'>
+                  <Image src={image2} alt='' className='w-1/3 absolute -bottom-[50px] left-[20%] z-[-1]' />
+                  <p className='consnetesds text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] sm:text-start text-center'><span className='!text-[#E4F1F3]'> Confluxs token economy is built around the $CFX token,</span> a unit of value on the platform that enables token holders to pay transaction fees, earn rewards through staking, rent storage,and participate in network governance. CFX also incentivizes and rewards miners, who ensure the secure operation of the Network.</p>
+                  <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[30px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px]  group gap-[7.50px] mt-[32px] sm:mt-[36px] md:mt-[40px] lg:mt-[48px] xl:mt-[64px] 2xl:mt-[70px]'>
+                    Discover Cfx
                   </button>
-              </div>
-            </div>
-            <div className='col-span-6'>
-              <div className="grid grid-cols-2 gap-[32px] sm:gap-[36px] md:gap-[40px] lg:gap-[48px] xl:gap-[64px] 2xl:gap-[96px]" ref={ref}>
-                {stats.map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    variants={numberVariants}
-                    initial="hidden"
-                    animate={controls}
-                    custom={index}
-                  >
-                    <motion.h2
-                      className="tradines text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[50px] font-bold !text-start border-l-[2px] border-[#F94819] pl-[12px] sm:pl-[13px] md:pl-[14px] lg:pl-[15px] xl:pl-[16px] 2xl:pl-[20px]"
-                      custom={stat.value}
-                      variants={countVariants}
-                      initial="hidden"
-                      animate={controls}
-                    >
-                      <motion.span>
-                        {stat.value % 1 === 0
-                          ? stat.value.toLocaleString()
-                          : stat.value.toFixed(1)}
-                      </motion.span>
-                      {stat.suffix}
-                    </motion.h2>
-                    <p className="bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] font-normal pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-start border-l-[2px] border-transparent pl-[12px] sm:pl-[13px] md:pl-[14px] lg:pl-[15px] xl:pl-[16px] 2xl:pl-[20px]">
-                      {stat.label}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
+                </div>
+                <div>
             </div>
           </div>
         </div>
