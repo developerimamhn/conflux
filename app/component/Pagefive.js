@@ -181,7 +181,7 @@ const Pagefive = () => {
                     className="boxingseiasa group relative p-[15px] sm:p-[16px] md:p-[20px] lg:p-[24px] xl:p-[32px] 2xl:p-[36px]"
                   >
                     <div
-                      className="back h-full absolute right-0 top-0 w-full z-[50] rounded-[14.417px] border-[4px] border-solid border-transparent group-hover:bg-gradient-to-br  bg-gradient-to-tl from-[#00CCFF] via-[#00CCFF00] to-[#00CCFF] bg-border-box"
+                      className="back h-full absolute right-0 top-0 w-full rounded-[14.417px] border-[4px] border-solid border-transparent group-hover:bg-gradient-to-br  bg-gradient-to-tl from-[#00CCFF] via-[#00CCFF00] to-[#00CCFF] bg-border-box"
                     ></div>
                     <div className="flex items-center justify-start gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[19px]">
                       {item.iconPath}
@@ -195,7 +195,7 @@ const Pagefive = () => {
                       </p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[30px] opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"
+                        className="w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[30px]  relative z-20 opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"
                         viewBox="0 0 30 29"
                         fill="none"
                       >

@@ -321,7 +321,7 @@ const Pagetwo = () => {
                   className="col-span-12 sm:col-span-6 lg:col-span-4 relative sectionraping pb-[14px] sm:pb-[15px] md:pb-[16px] lg:pb-[20px] xl:pb-[24px] 2xl:pb-[30px] pl-[14px] sm:pl-[15px] md:pl-[16px] lg:pl-[20px] xl:pl-[24px] 2xl:pl-[30px] pr-[20px] sm:pr-[24px] md:pr-[32px] lg:pr-[36px] xl:pr-[40px] 2xl:pr-[50px]"
                 >
                   <svg
-                    className="w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[103px] absolute -top-[16px] sm:-top-[18px] md:-top-[20px] lg:-top-[24px] xl:-top-[32px] 2xl:-top-[51.5px] left-[14px] sm:left-[15px] md:left-[16px] lg:left-[20px] xl:left-[24px] 2xl:left-[30px]"
+                    className="w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[103px] absolute -top-[16px] sm:-top-[18px] md:-top-[20px] lg:-top-[24px] xl:-top-[32px] 2xl:-top-[51.5px] left-1/2 -translate-x-1/2 sm:translate-0 sm:left-[15px] md:left-[16px] lg:left-[20px] xl:left-[24px] 2xl:left-[30px]"
                     viewBox="0 0 103 104"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -360,10 +360,10 @@ const Pagetwo = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <h3 className="hightreac text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] 2xl:text-[35px] pb-[10px] sm:pb-[11px] md:pb-[12px] !text-left pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[75px]">
+                  <h3 className="hightreac text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] 2xl:text-[35px] pb-[10px] sm:pb-[11px] md:pb-[12px] sm:!text-left pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[75px] text-center">
                     {item.title}
                   </h3>
-                  <p className="outtrescosn text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px]">
+                  <p className="outtrescosn text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] text-center sm:!text-left">
                     {item.description}
                   </p>
                 </div>

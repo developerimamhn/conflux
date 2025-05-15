@@ -188,13 +188,82 @@ const sliderSettings = {
 };
 
 const Pageone = () => {
-  
+  const textRef = useRef(null);
+  const buttonRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    // Check if the screen width is greater than 768px (non-mobile)
+    const isDesktop = window.innerWidth > 768;
+
+    if (isDesktop) {
+      // Animation for text elements
+      gsap.from(textRef.current, {
+        opacity: 0,
+        x: -100,
+        duration: 1.5,
+        ease: 'power2.out',
+      });
+
+      // Animation for buttons
+      gsap.from(buttonRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        delay: 0.5,
+        ease: 'power2.out',
+      });
+
+      // Animation for image
+      gsap.from(imageRef.current, {
+        opacity: 0,
+        x: 100,
+        duration: 1.5,
+        delay: 0.5,
+        ease: 'power2.out',
+      });
+    }
+  }, []);
+
+
+  const itemRefs = useRef([]);
+
+  // GSAP animation effect
+  useEffect(() => {
+    const isDesktop = window.innerWidth > 768;
+
+    if (isDesktop) {
+      itemRefs.current.forEach((el, index) => {
+        if (!el) return;
+
+        gsap.fromTo(
+          el,
+          {
+            autoAlpha: 0,
+            y: 50,
+          },
+          {
+            autoAlpha: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 100%',
+              toggleActions: 'play none none none',
+            },
+            delay: index * 0.1, // Delay between each item
+          }
+        );
+      });
+    }
+  }, []);
     return (
-        <div className='relative'>
+        <div ref={buttonRef} className='relative'>
             <div   className='w-full'>
               <div className='flex items-center py-[20px] sm:py-[24px] md:py-[32px] lg:py-[36px] xl:py-[40px] 2xl:py-[50px]  trasnlist px-[24px] sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px] '>
-                 <div className=' h-full absolute left-0 top-0  w-[400px] z-[50] border-t-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#00C8FF4D,#060C1200)_1] xl:block hidden'></div>
-                  <div className=' h-full absolute right-0 bottom-0 z-[50] border-b-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#00C8FF4D,#060C1200)_1] w-[400px] xl:block hidden'></div>
+                 <div className=' h-full absolute left-0 top-0  w-[400px] -z-[1] border-t-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#00C8FF4D,#060C1200)_1] xl:block hidden'></div>
+                  <div className=' h-full absolute right-0 bottom-0 -z-[1] border-b-[1px] border-solid bg-transparent ![border-image:linear-gradient(to_right,#05091000,#00C8FF4D,#060C1200)_1] w-[400px] xl:block hidden'></div>
                   <div className='flex sm:flex-row flex-col justify-between items-center w-full gap-[36px]'>
                     <div className='flex items-center sm:flex-row flex-col gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px]'>
                       <h2 className='stayupasd text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px]'>Stay Updated On the Latest  news</h2>
@@ -215,7 +284,8 @@ const Pageone = () => {
                     </div>
                     <div className='flex items-center'>
                       <div class="flex flex-wrap items-center justify-center sm:justify-start gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px]">
-                        <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                        <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" y="1.26855" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_296_753)" fill-opacity="0.6" stroke="url(#paint1_linear_296_753)"/>
 <g clip-path="url(#clip0_296_753)">
 <path d="M21.8818 28.3948C21.8818 27.4668 22.5466 26.8498 23.2261 26.8498C23.9187 26.8498 24.5855 27.4782 24.5706 28.3795L24.5705 28.3948C24.5705 29.323 23.9057 29.94 23.2261 29.94C22.5633 29.94 21.8818 29.3168 21.8818 28.3948Z" fill="#E4F1F3"/>
@@ -236,7 +306,7 @@ const Pageone = () => {
 </clipPath>
 </defs>
                         </svg>
-                        <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" y="0.5" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_340_367)" fill-opacity="0.57" stroke="url(#paint1_linear_340_367)"/>
 <g clip-path="url(#clip0_340_367)">
 <path d="M30.4581 17.9324C28.3359 17.4394 26.1287 17.4394 24.0065 17.9324C22.7807 17.1801 21.8441 16.8348 21.1634 16.6893C20.7933 16.6102 20.4999 16.5905 20.2793 16.5964C20.1692 16.5993 20.078 16.6086 20.0055 16.6198C19.9692 16.6254 19.9377 16.6314 19.9109 16.6373C19.8975 16.6402 19.8853 16.6431 19.8742 16.6459L19.8586 16.65L19.8514 16.6519L19.848 16.6529L19.8447 16.6538C19.8447 16.6538 19.8447 16.6538 19.8447 16.6538C19.8439 16.6542 19.8476 16.664 20.0832 17.4879L19.8447 16.6538C19.5981 16.7244 19.3952 16.9003 19.2906 17.1346C18.9986 17.7884 18.8392 18.4937 18.8214 19.2095C18.8082 19.7415 18.8735 20.2715 19.0143 20.7827C18.6443 21.2309 18.3427 21.7328 18.1206 22.2721C17.829 22.98 17.6798 23.7385 17.6816 24.5041C17.6819 27.2001 18.4772 29.0128 19.8327 30.1775C20.7824 30.9936 21.9369 31.4278 23.0929 31.6765C22.902 32.2068 22.8525 32.7679 22.8911 33.3397V34.3785C22.1838 34.5273 21.6953 34.4803 21.3471 34.3653C20.9095 34.2208 20.5741 33.9305 20.2541 33.5132C20.092 33.3021 19.9427 33.0701 19.7859 32.8162L19.6864 32.6542C19.5636 32.4536 19.4311 32.2374 19.2974 32.0401C18.966 31.5515 18.4772 30.9409 17.685 30.7329L16.8453 30.5124L16.4043 32.1919L17.2441 32.4124C17.382 32.4487 17.5637 32.5774 17.8602 33.0147C17.9691 33.1753 18.073 33.3449 18.1917 33.5386C18.229 33.5993 18.2678 33.6627 18.3086 33.7289C18.4716 33.9927 18.6585 34.2863 18.8763 34.5702C19.316 35.1434 19.9147 35.7212 20.8029 36.0143C21.4131 36.2157 22.1028 36.264 22.8911 36.143V39.3869C22.8911 39.8664 23.2798 40.2552 23.7594 40.2552H30.7053C31.1849 40.2552 31.5736 39.8664 31.5736 39.3869V33.2006C31.5736 32.6523 31.5497 32.1509 31.3954 31.6831C32.5455 31.4404 33.6909 31.0058 34.6344 30.189C35.9894 29.0161 36.7831 27.1871 36.7831 24.4747V24.472C36.7788 23.1196 36.3042 21.817 35.4504 20.7827C35.5912 20.2716 35.6565 19.7415 35.6433 19.2095C35.6256 18.4937 35.4662 17.7884 35.1741 17.1346C35.0694 16.9003 34.8665 16.7243 34.6198 16.6538L34.3814 17.4886C34.6198 16.6538 34.6174 16.6531 34.6165 16.6528L34.6132 16.6519L34.6059 16.6499L34.5903 16.6458C34.5793 16.6431 34.567 16.6402 34.5536 16.6372C34.5269 16.6314 34.4955 16.6254 34.4592 16.6198C34.3866 16.6086 34.2954 16.5993 34.1853 16.5964C33.9646 16.5905 33.6711 16.6102 33.3009 16.6893C32.62 16.8348 31.6835 17.18 30.4581 17.9324Z" fill="#FAFBFB"/>
@@ -258,7 +328,7 @@ const Pageone = () => {
 
 
 
-                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="1.42578" y="1.26855" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_296_763)" fill-opacity="0.57" stroke="url(#paint1_linear_296_763)"/>
 <g clip-path="url(#clip0_296_763)">
 <path d="M40.3687 20.5471C39.4527 20.9451 38.4835 21.2074 37.4918 21.3255C38.534 20.7152 39.3178 19.7456 39.6961 18.5987C38.7108 19.1749 37.6345 19.5791 36.5135 19.7942C36.0414 19.2995 35.4737 18.9059 34.8448 18.6374C34.2159 18.3689 33.5389 18.2311 32.8551 18.2324C30.0866 18.2324 27.8461 20.4403 27.8461 23.1621C27.8441 23.5406 27.8875 23.9181 27.9753 24.2864C25.99 24.1933 24.0461 23.6869 22.2677 22.7994C20.4894 21.912 18.9159 20.6632 17.6479 19.1328C17.203 19.8828 16.9678 20.7384 16.9667 21.6104C16.9667 23.3198 17.8585 24.8307 19.2051 25.7159C18.4073 25.697 17.6258 25.4858 16.927 25.1003V25.1614C16.927 27.5525 18.6567 29.5416 20.9461 29.9944C20.5156 30.1092 20.0719 30.1673 19.6264 30.1674C19.3102 30.1679 18.9948 30.1373 18.6847 30.0758C19.3211 32.0345 21.1735 33.4589 23.3677 33.4996C21.5847 34.8737 19.3957 35.6164 17.1448 35.6109C16.7452 35.6103 16.346 35.5865 15.9492 35.5397C18.2391 37.0019 20.901 37.7753 23.618 37.768C32.8444 37.768 37.885 30.2539 37.885 23.7369C37.885 23.5233 37.8794 23.3096 37.8693 23.101C38.8476 22.4051 39.694 21.5402 40.3687 20.5471Z" fill="#FAFBFB"/>
@@ -278,7 +348,7 @@ const Pageone = () => {
 </defs>
                           </svg>
 
-                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect x="0.5" y="0.5" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_340_376)" fill-opacity="0.57" stroke="url(#paint1_linear_340_376)"/>
                           <g clip-path="url(#clip0_340_376)">
                           <path d="M40.1818 19.2239L36.2515 35.4425C35.9549 36.5872 35.1817 36.8721 34.0828 36.3328L28.0942 32.4715L25.2046 34.9033C24.8848 35.1831 24.6173 35.4171 24.001 35.4171L24.4313 30.0804L35.5305 21.3047C36.0131 20.9282 35.4259 20.7196 34.7805 21.0961L21.0591 28.6559L15.1519 27.0382C13.867 26.6871 13.8437 25.9138 15.4193 25.3746L38.5248 17.5858C39.5946 17.2348 40.5307 17.7944 40.1818 19.2239V19.2239Z" fill="#FAFBFB"/>
@@ -299,7 +369,7 @@ const Pageone = () => {
                           </svg>
 
 
-                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect x="0.5" y="0.5" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_340_380)" fill-opacity="0.57" stroke="url(#paint1_linear_340_380)"/>
                           <g clip-path="url(#clip0_340_380)">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4423 15.9704C27.1829 15.9055 26.9081 15.9638 26.6974 16.1284C26.4867 16.2929 26.3635 16.5454 26.3635 16.8127V22.9168C24.0859 23.0549 21.9458 23.7274 20.2071 24.7292C19.5336 24.137 18.6255 23.8348 17.7188 23.8348C15.7795 23.8348 14.208 25.4063 14.208 27.3456C14.208 28.6442 14.9131 29.7674 15.9563 30.3712C15.9485 30.4818 15.9445 30.593 15.9445 30.7047C15.9445 32.8626 17.4247 34.8299 19.4544 36.209C21.5119 37.6071 24.2871 38.5189 27.2317 38.5189C30.1763 38.5189 32.9516 37.6071 35.009 36.209C37.0388 34.8299 38.519 32.8626 38.519 30.7047C38.519 30.593 38.515 30.4819 38.5071 30.3713C39.5504 29.7675 40.2556 28.6443 40.2556 27.3456C40.2556 25.4063 38.6841 23.8348 36.7448 23.8348C35.8381 23.8348 34.93 24.137 34.2565 24.7293C32.5178 23.7274 30.3775 23.0549 28.1 22.9168V17.9247L33.4051 19.251C33.7115 20.3487 34.7188 21.1539 35.9142 21.1539C37.3527 21.1539 38.519 19.9878 38.519 18.5492C38.519 17.1106 37.3527 15.9445 35.9142 15.9445C34.8516 15.9445 33.9377 16.5807 33.5326 17.4929L27.4423 15.9704ZM35.9142 19.4175C35.4391 19.4175 35.0531 19.0358 35.0461 18.5623L35.046 18.5492L35.0461 18.5355C35.0534 18.0623 35.4393 17.681 35.9142 17.681C36.3937 17.681 36.7825 18.0697 36.7825 18.5492C36.7825 19.0287 36.3937 19.4175 35.9142 19.4175ZM22.8905 29.8364H24.627V28.0999H22.8905V29.8364ZM27.2318 33.3094C25.5183 33.3094 24.4245 33.0135 23.2277 32.5092L22.5535 34.1096C23.9358 34.692 25.2583 35.0459 27.2318 35.0459C29.2052 35.0459 30.5278 34.692 31.9102 34.1096L31.2359 32.5092C30.0391 33.0135 28.9452 33.3094 27.2318 33.3094ZM31.573 29.8364H29.8365V28.0999H31.573V29.8364Z" fill="#FAFBFB"/>
@@ -320,7 +390,7 @@ const Pageone = () => {
                           </svg>
 
 
-                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect x="0.814453" y="1.26855" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_296_775)" fill-opacity="0.57" stroke="url(#paint1_linear_296_775)"/>
                           <g clip-path="url(#clip0_296_775)">
                           <path d="M29.2186 28.0001C29.2243 29.9556 28.4538 31.8334 27.0762 33.2212C25.6986 34.609 23.8265 35.3933 21.871 35.402C19.9156 35.3933 18.0435 34.609 16.6659 33.2212C15.2882 31.8334 14.5177 29.9556 14.5235 28.0001C14.5177 26.0447 15.2882 24.1669 16.6659 22.7791C18.0435 21.3913 19.9156 20.6069 21.871 20.5983C23.8265 20.6069 25.6986 21.3913 27.0762 22.7791C28.4538 24.1669 29.2243 26.0447 29.2186 28.0001ZM37.2716 28.0001C37.2716 31.8421 35.6327 34.9678 33.6032 34.9678C31.5737 34.9678 29.924 31.8421 29.924 28.0001C29.924 24.1581 31.5737 21.0325 33.6032 21.0325C35.6327 21.0325 37.2716 24.1581 37.2716 28.0001ZM40.5709 28.0001C40.5709 31.4406 39.9957 34.2407 39.2794 34.2407C38.5631 34.2407 37.9879 31.4406 37.9879 28.0001C37.9879 24.5597 38.5631 21.7596 39.2794 21.7596C39.9957 21.7596 40.5709 24.5597 40.5709 28.0001Z" fill="#FAFBFB"/>
@@ -340,7 +410,7 @@ const Pageone = () => {
                           </defs>
                           </svg>
 
-                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px]' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg className='w-[28px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[55px] hover:scale-110 duration-300 cursor-pointer' viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect x="0.5" y="0.5" width="53.4628" height="53.4628" rx="26.7314" fill="url(#paint0_radial_340_388)" fill-opacity="0.57" stroke="url(#paint1_linear_340_388)"/>
                           <g clip-path="url(#clip0_340_388)">
                           <path d="M37.594 21.2601C38.09 23.1941 38.09 27.2314 38.09 27.2314C38.09 27.2314 38.09 31.2688 37.594 33.2028C37.3183 34.2718 36.5119 35.113 35.4907 35.3973C33.6359 35.9139 27.2369 35.9139 27.2369 35.9139C27.2369 35.9139 20.8412 35.9139 18.9831 35.3973C17.9575 35.1086 17.1522 34.2686 16.8798 33.2028C16.3838 31.2688 16.3838 27.2314 16.3838 27.2314C16.3838 27.2314 16.3838 23.1941 16.8798 21.2601C17.1554 20.191 17.9618 19.3499 18.9831 19.0656C20.8412 18.549 27.2369 18.549 27.2369 18.549C27.2369 18.549 33.6359 18.549 35.4907 19.0656C36.5163 19.3543 37.3216 20.1943 37.594 21.2601V21.2601ZM25.0663 31.03L31.5781 27.2314L25.0663 23.4328V31.03Z" fill="#FAFBFB"/>

@@ -150,14 +150,14 @@ const Footer = () => {
     return (
         <div id='Support' className='px-[32px] sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[77px]'>
             <div className='w-full '>
-                <div className='flex items-start justify-between sm:flex-row flex-col gap-[40px]  '>
-                    <div className='grid grid-cols-12 justify-between gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[128px] h-full relative pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[77px] border-b-[1px] border-[#32343D]'>
-                      <div className='col-span-8 sm:col-span-5'>
-                        <Image className='sm:w-[50px] md:w-[60px] lg:w-[70px] xl:w-[90px] 2xl:w-[110px] w-[135px] ' src={logo} alt="loading..."/>
-                        <p className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] md:pr-[20px] xl:pr-[30%]'>Conflux Network: Building a multi-chain ecosystem to enable creators, communities, and markets to connect globally across borders and protocols.
+                <div className='flex items-center sm:items-start justify-between sm:flex-row flex-col gap-[40px]  '>
+                    <div className='grid grid-cols-12 items-center justify-between gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[128px] h-full relative pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[77px] border-b-[1px] border-[#32343D]'>
+                      <div className='col-span-12 sm:col-span-5'>
+                        <Image className='sm:w-[50px] md:w-[60px] lg:w-[70px] xl:w-[90px] 2xl:w-[110px] w-[135px] mx-auto sm:mx-0' src={logo} alt="loading..."/>
+                        <p className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] md:pr-[20px] xl:pr-[30%] text-center sm:!text-left sm:px-0 px-[20%]'>Conflux Network: Building a multi-chain ecosystem to enable creators, communities, and markets to connect globally across borders and protocols.
 </p>
                       </div>
-                      <div className='col-span-7 grid grid-cols-2 gap-6 sm:gap-0 justify-between items-start'>
+                      <div className='col-span-12 sm:col-span-7 grid grid-cols-2  sm:gap-0 justify-between items-center sm:items-start'>
                         <div className='flex items-center flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
                           <div className='h-full absolute left-0 top-0  w-[1px] z-[50] backgaeasfoter xl:block hidden'></div>
                           <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
@@ -170,7 +170,7 @@ const Footer = () => {
                             </ul>
                             </div>
                         </div> 
-                        <div className='flex items-end flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
+                        <div className='flex items-center sm:items-end flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
                           <div className='h-full absolute left-0 top-0  w-[1px] z-[50] backgaeasfoter xl:block hidden'></div>
                           <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-center relative'>
                           <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Quick Links</a>
