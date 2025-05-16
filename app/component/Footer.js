@@ -189,8 +189,8 @@ const Footer = () => {
                 <div className='flex items-center sm:flex-row flex-col justify-between py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]'>
                   <h3 className='conflueiah text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Copyright © 2022 Conflux. All Rights Reserved</h3>
                   <div className='flex items-center justify-between gap-[20px] sm:gap-[24px] md:gap-[32px] lg:gap-[36px] xl:gap-[40px] 2xl:gap-[48px]'>
-                    <h3 className='conflueiah text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Privacy Policy</h3>
-                    <h3 className='conflueiah text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Terms of service</h3>
+                    <a href='#' className='conflueiah text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] cursor-pointer'>Privacy Policy</a>
+                    <a href='#' className='conflueiah text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] cursor-pointer'>Terms of service</a>
                   </div>
                 </div>
             </div>

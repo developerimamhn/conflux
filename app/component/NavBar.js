@@ -99,7 +99,7 @@ const NavBar = () => {
             
             <header className='px-[24px]   flex  justify-between items-center py-[20px] sm:py-[24px] lg:py-[30px] relative  sm:overflow-hidden backgroundimage sm:px-[40px] md:px-[50px] lg:px-[70px] xl:px-[90px] 2xl:px-[100px]'>
             <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev>
-            <Link onClick={(e) => handleScrollToTop(e, "")} href='/' className='cursor-pointer relative flex  items-center justify-start Froggo-Logo'>
+            <Link onClick={(e) => handleScrollToTop(e, "")} href='#' className='cursor-pointer relative flex  items-center justify-start Froggo-Logo'>
                 <Image className='w-full h-[24px] sm:h-[32px] 2xl:h-[38.7px]' src={logo} alt=''/></Link>
                 <div className='sm:hidden relative top-[-11px] -left-6'>
                     
@@ -161,7 +161,7 @@ const NavBar = () => {
                     </defs>
                     </svg>
                     <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center font- h-[30px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] '>
-                    Creat wallet
+                    Createwallet
                     </button>
                     </ul>
                 </nav>
@@ -178,7 +178,7 @@ const NavBar = () => {
                     </defs>
                     </svg>
                 <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[30px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px]  group gap-[7.50px]'>
-                    Creat wallet
+                    Create wallet
                 </button>
                 </ul>
                 
